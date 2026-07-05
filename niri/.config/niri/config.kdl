@@ -283,6 +283,46 @@ layout {
     }
 }
 
+animations {
+    // Easing animations for opening and closing windows.
+    // We use a high-end cubic-bezier curve that offers a smooth, natural deceleration (easeOutQuart style).
+    window-open {
+        duration-ms 350
+        curve "cubic-bezier" 0.16 1.0 0.3 1.0 // Very smooth deceleration from quick start
+    }
+
+    window-close {
+        duration-ms 200
+        curve "cubic-bezier" 0.16 1.0 0.3 1.0 // Fast, clean exit with the same curve profile
+    }
+
+    // Pure easing transitions for workspace switching, window movement, and resizing.
+    // This replaces spring physics to guarantee a uniform "smooth glide" with zero bounces.
+    workspace-switch {
+        duration-ms 350
+        curve "cubic-bezier" 0.16 1.0 0.3 1.0
+    }
+
+    window-movement {
+        duration-ms 300
+        curve "cubic-bezier" 0.16 1.0 0.3 1.0
+    }
+
+    window-resize {
+        duration-ms 300
+        curve "cubic-bezier" 0.16 1.0 0.3 1.0
+    }
+
+    // Smooth transition for screenshot utility UI
+    screenshot-ui-open {
+        duration-ms 200
+        curve "ease-out-quad"
+    }
+
+    // Slow down all animations by this factor to inspect/debug them (uncomment to use)
+    // slowdown 2.0
+}
+
 blur {
     // Passes controls the downsample/upsample steps. 
     // 3 to 5 is the sweet spot for an ultra-smooth glass look.

@@ -338,7 +338,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "allowPasswordWithFprintd": false,
         "animationDisabled": false,
-        "animationSpeed": 1,
+        "animationSpeed": 1.3,
         "autoStartAuth": false,
         "avatarImage": "/home/lbx/Downloads/Telegram Desktop/photo_2026-07-04_18-39-22.jpg",
         "boxRadiusRatio": 1,
