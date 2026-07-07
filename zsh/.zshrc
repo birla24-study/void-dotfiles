@@ -38,9 +38,8 @@ alias xu='sudo xbps-install -Syu'
 alias yt='noglob yt-dlp -P ~/YouTube -f "399+bestaudio/bestvideo+bestaudio" --remux-video mkv --embed-metadata --embed-chapters --embed-thumbnail'
 alias ff='fastfetch'
 alias antigravity='/opt/Antigravity/bin/antigravity-ide'
-alias 'edit'='nano ~/.zshrc'
+alias 'edit'='code ~/dotfiles/zsh/.zshrc'
 alias 'source'='source ~/.zshrc'
-alias 'palemoon'='/opt/palemoon/palemoon'
 alias 'adbf'='adb forward tcp:6000 localfilesystem:/data/local/debugger-socket'
 
 
