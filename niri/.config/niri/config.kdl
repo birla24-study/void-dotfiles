@@ -333,7 +333,7 @@ blur {
     offset 2.7
 
     // Adds subtle grain to eliminate color banding on dark/vibrant wallpapers
-    noise 0.03
+    noise 0.02
 
     // Boosts the colors slightly behind the blur for a rich "liquid glass" feel
     saturation 1.8

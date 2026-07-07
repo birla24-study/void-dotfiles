@@ -116,12 +116,12 @@
                     "showDiskUsageAsPercent": false,
                     "showGpuTemp": false,
                     "showLoadAverage": false,
-                    "showMemoryAsPercent": true,
+                    "showMemoryAsPercent": false,
                     "showMemoryUsage": true,
                     "showNetworkStats": true,
                     "showSwapUsage": false,
                     "textColor": "none",
-                    "useMonospaceFont": true,
+                    "useMonospaceFont": false,
                     "usePadding": false
                 },
                 {
@@ -286,12 +286,17 @@
                 "name": "eDP-1",
                 "widgets": [
                     {
-                        "id": "Weather",
+                        "clockColor": "none",
+                        "clockStyle": "minimal",
+                        "customFont": "",
+                        "format": "HH:mm\\nd MMMM yyyy",
+                        "id": "Clock",
                         "roundedCorners": true,
-                        "scale": 1,
-                        "showBackground": true,
-                        "x": 20,
-                        "y": 40
+                        "scale": 2.4,
+                        "showBackground": false,
+                        "useCustomFont": false,
+                        "x": 560,
+                        "y": 100
                     }
                 ]
             }
@@ -344,14 +349,14 @@
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "digital",
-        "compactLockScreen": true,
+        "compactLockScreen": false,
         "dimmerOpacity": 0.2,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
-        "enableLockScreenMediaControls": false,
+        "enableLockScreenMediaControls": true,
         "enableShadows": false,
         "forceBlackScreenCorners": false,
-        "iRadiusRatio": 0.78,
+        "iRadiusRatio": 1,
         "keybinds": {
             "keyDown": [
                 "Down"
@@ -379,14 +384,14 @@
         "language": "",
         "lockOnSuspend": false,
         "lockScreenAnimations": true,
-        "lockScreenBlur": 0.3,
+        "lockScreenBlur": 0.5,
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
             "eDP-1"
         ],
         "lockScreenTint": 0,
         "passwordChars": true,
-        "radiusRatio": 0.8,
+        "radiusRatio": 0.6,
         "reverseScroll": false,
         "scaleRatio": 0.9,
         "screenRadiusRatio": 1,
@@ -427,11 +432,11 @@
         "suspendTimeout": 1800
     },
     "location": {
-        "analogClockInCalendar": false,
+        "analogClockInCalendar": true,
         "autoLocate": false,
         "firstDayOfWeek": -1,
-        "hideWeatherCityName": false,
-        "hideWeatherTimezone": false,
+        "hideWeatherCityName": true,
+        "hideWeatherTimezone": true,
         "name": "Nagpur",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
@@ -469,7 +474,7 @@
         "backgroundOpacity": 0.76,
         "clearDismissed": true,
         "criticalUrgencyDuration": 15,
-        "density": "default",
+        "density": "compact",
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": true,
@@ -500,7 +505,7 @@
     },
     "osd": {
         "autoHideMs": 3000,
-        "backgroundOpacity": 0.9,
+        "backgroundOpacity": 0.8,
         "enabled": true,
         "enabledTypes": [
             0,
@@ -515,7 +520,7 @@
         "overlayLayer": true
     },
     "plugins": {
-        "autoUpdate": false,
+        "autoUpdate": true,
         "notifyUpdates": true
     },
     "sessionMenu": {
@@ -530,7 +535,7 @@
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": "1"
+                "keybind": "Alt+L"
             },
             {
                 "action": "suspend",
@@ -551,7 +556,7 @@
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": "2"
+                "keybind": "Alt+R"
             },
             {
                 "action": "logout",
@@ -565,14 +570,14 @@
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": "4"
+                "keybind": "Alt+S"
             },
             {
                 "action": "rebootToUefi",
                 "command": "",
                 "countdownEnabled": true,
-                "enabled": false,
-                "keybind": ""
+                "enabled": true,
+                "keybind": "Alt+U"
             },
             {
                 "action": "userspaceReboot",
@@ -604,8 +609,8 @@
         "memWarningThreshold": 80,
         "swapCriticalThreshold": 90,
         "swapWarningThreshold": 80,
-        "tempCriticalThreshold": 90,
-        "tempWarningThreshold": 80,
+        "tempCriticalThreshold": 75,
+        "tempWarningThreshold": 60,
         "useCustomColors": false,
         "warningColor": ""
     },
@@ -779,6 +784,20 @@
                 ],
                 "path": "/home/lbx/Pictures/Wallpapers/cottages-river.png",
                 "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Catppuccin",
+                "darkMode": true,
+                "generationMethod": "monochrome",
+                "paletteColors": [
+                    "#ffffff",
+                    "#c6c6c6",
+                    "#e2e2e2",
+                    "#ffb4ab"
+                ],
+                "path": "/home/lbx/Pictures/Wallpapers/horizon.jpg",
+                "useWallpaperColors": true
             }
         ],
         "fillColor": "#000000",
@@ -805,7 +824,7 @@
         "useOriginalImages": false,
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "single",
+        "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
