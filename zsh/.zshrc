@@ -39,7 +39,7 @@ alias yt='noglob yt-dlp -P ~/YouTube -f "399+bestaudio/bestvideo+bestaudio" --re
 alias ff='fastfetch'
 alias antigravity='/opt/Antigravity/bin/antigravity-ide'
 alias 'edit'='code ~/dotfiles/zsh/.zshrc'
-alias 'source'='source ~/.zshrc'
+alias 'src'='source ~/.zshrc'
 alias 'adbf'='adb forward tcp:6000 localfilesystem:/data/local/debugger-socket'
 
 
