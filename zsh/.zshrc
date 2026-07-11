@@ -101,7 +101,9 @@ quad9() {
 # --- Startup Applications ---
 # Automatically start Niri inside a D-Bus session on TTY1 (from .bash_profile)
 if [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-    exec dbus-run-session niri --session
+    dbus-run-session niri --session 2>/dev/null
+    clear
+    exit
 fi
 
 
