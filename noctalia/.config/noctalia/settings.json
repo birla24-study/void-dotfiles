@@ -9,7 +9,7 @@
         "density": "default",
         "enableClipPreview": true,
         "enableClipboardChips": true,
-        "enableClipboardHistory": true,
+        "enableClipboardHistory": false,
         "enableClipboardSmartIcons": true,
         "enableSessionSearch": true,
         "enableSettingsSearch": false,
@@ -25,7 +25,7 @@
         "showCategories": false,
         "showIconBackground": false,
         "sortByMostUsed": true,
-        "terminalCommand": "kitty -e",
+        "terminalCommand": "ptyxis",
         "viewMode": "list"
     },
     "audio": {
@@ -96,7 +96,7 @@
                     "pillSize": 0.6,
                     "showApplications": false,
                     "showApplicationsHover": false,
-                    "showBadge": true,
+                    "showBadge": false,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
                 }
@@ -109,14 +109,14 @@
                     "id": "SystemMonitor",
                     "showCpuCores": false,
                     "showCpuFreq": false,
-                    "showCpuTemp": false,
+                    "showCpuTemp": true,
                     "showCpuUsage": true,
                     "showDiskAvailable": false,
                     "showDiskUsage": false,
                     "showDiskUsageAsPercent": false,
                     "showGpuTemp": false,
                     "showLoadAverage": false,
-                    "showMemoryAsPercent": false,
+                    "showMemoryAsPercent": true,
                     "showMemoryUsage": true,
                     "showNetworkStats": true,
                     "showSwapUsage": false,
@@ -125,18 +125,34 @@
                     "usePadding": false
                 },
                 {
+                    "compactMode": true,
+                    "hideMode": "hidden",
+                    "hideWhenIdle": false,
+                    "id": "MediaMini",
+                    "maxWidth": 360,
+                    "panelShowAlbumArt": true,
+                    "scrollingMode": "hover",
+                    "showAlbumArt": true,
+                    "showArtistFirst": false,
+                    "showProgressRing": false,
+                    "showVisualizer": false,
+                    "textColor": "none",
+                    "useFixedWidth": false,
+                    "visualizerType": "mirrored"
+                }
+            ],
+            "right": [
+                {
                     "blacklist": [
                     ],
-                    "chevronColor": "none",
-                    "colorizeIcons": false,
-                    "drawerEnabled": false,
+                    "chevronColor": "secondary",
+                    "colorizeIcons": true,
+                    "drawerEnabled": true,
                     "hidePassive": false,
                     "id": "Tray",
                     "pinned": [
                     ]
-                }
-            ],
-            "right": [
+                },
                 {
                     "displayMode": "alwaysHide",
                     "iconColor": "none",
@@ -166,12 +182,12 @@
                 },
                 {
                     "deviceNativePath": "BAT1",
-                    "displayMode": "icon-hover",
+                    "displayMode": "icon-only",
                     "hideIfIdle": false,
                     "hideIfNotDetected": true,
                     "id": "Battery",
                     "showNoctaliaPerformance": false,
-                    "showPowerProfiles": false
+                    "showPowerProfiles": true
                 },
                 {
                     "clockColor": "none",
@@ -348,9 +364,9 @@
         "avatarImage": "/home/lbx/Downloads/Telegram Desktop/photo_2026-07-04_18-39-22.jpg",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
-        "clockStyle": "digital",
+        "clockStyle": "analog",
         "compactLockScreen": false,
-        "dimmerOpacity": 0.2,
+        "dimmerOpacity": 0,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": true,
@@ -384,7 +400,7 @@
         "language": "",
         "lockOnSuspend": false,
         "lockScreenAnimations": true,
-        "lockScreenBlur": 0.5,
+        "lockScreenBlur": 1,
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
             "eDP-1"
@@ -435,7 +451,7 @@
         "analogClockInCalendar": true,
         "autoLocate": false,
         "firstDayOfWeek": -1,
-        "hideWeatherCityName": true,
+        "hideWeatherCityName": false,
         "hideWeatherTimezone": true,
         "name": "Nagpur",
         "showCalendarEvents": true,
@@ -455,7 +471,7 @@
         "bluetoothRssiPollingEnabled": true,
         "disableDiscoverability": false,
         "networkPanelView": "wifi",
-        "wifiDetailsViewMode": "grid"
+        "wifiDetailsViewMode": "list"
     },
     "nightLight": {
         "autoSchedule": true,
@@ -525,7 +541,7 @@
     },
     "sessionMenu": {
         "countdownDuration": 5000,
-        "enableCountdown": true,
+        "enableCountdown": false,
         "largeButtonsLayout": "grid",
         "largeButtonsStyle": false,
         "position": "center",
@@ -587,7 +603,7 @@
                 "keybind": ""
             }
         ],
-        "showHeader": false,
+        "showHeader": true,
         "showKeybinds": true
     },
     "settingsVersion": 59,
@@ -753,7 +769,7 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "Inter",
+        "fontDefault": "Inter Medium",
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
@@ -808,14 +824,14 @@
         ],
         "overviewBlur": 1,
         "overviewEnabled": true,
-        "overviewTint": 0.6,
+        "overviewTint": 0,
         "panelPosition": "follow_bar",
         "randomIntervalSec": 300,
         "setWallpaperOnAllMonitors": true,
-        "showHiddenFiles": true,
+        "showHiddenFiles": false,
         "skipStartupTransition": true,
         "solidColor": "#1a1a2e",
-        "sortOrder": "date_desc",
+        "sortOrder": "random",
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
         "transitionType": [
@@ -824,7 +840,7 @@
         "useOriginalImages": false,
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "recursive",
+        "viewMode": "browse",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",

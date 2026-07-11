@@ -24,11 +24,6 @@ PS1='[%n@%m %1~]%# '
 # Trick Electron/Chromium apps into checking for libsecret backend
 export XDG_CURRENT_DESKTOP=GNOME
 
-# API keys
-export GOOGLE_API_KEY="no"
-export GOOGLE_DEFAULT_CLIENT_ID="no"
-export GOOGLE_DEFAULT_CLIENT_SECRET="no"
-
 # --- Aliases ---
 alias ls='ls --color=auto'
 alias ll='ls -la'
@@ -42,6 +37,16 @@ alias 'edit'='code ~/dotfiles/zsh/.zshrc'
 alias 'src'='source ~/.zshrc'
 alias 'adbf'='adb forward tcp:6000 localfilesystem:/data/local/debugger-socket'
 
+alias sbctl="sudo ESP_PATH=/boot/efi sbctl"
+
+
+if [ -z "$XDG_RUNTIME_DIR" ]; then
+    export XDG_RUNTIME_DIR=/run/user/$(id -u)
+    if [ ! -d "$XDG_RUNTIME_DIR" ]; then
+        mkdir -p "$XDG_RUNTIME_DIR"
+        chmod 700 "$XDG_RUNTIME_DIR"
+    fi
+fi
 
 # --- Load Plugins ---
 # Must stay above the smart tab configuration
@@ -98,3 +103,5 @@ quad9() {
 if [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
     exec dbus-run-session niri --session
 fi
+
+
