@@ -62,12 +62,12 @@
         "middleClickFollowMouse": true,
         "monitors": [
         ],
-        "mouseWheelAction": "none",
-        "mouseWheelWrap": true,
+        "mouseWheelAction": "workspace",
+        "mouseWheelWrap": false,
         "outerCorners": false,
         "position": "top",
         "reverseScroll": false,
-        "rightClickAction": "controlCenter",
+        "rightClickAction": "settings",
         "rightClickCommand": "",
         "rightClickFollowMouse": true,
         "screenOverrides": [
@@ -246,7 +246,7 @@
                 "id": "profile-card"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "shortcuts-card"
             },
             {
@@ -278,6 +278,9 @@
                 },
                 {
                     "id": "WallpaperSelector"
+                },
+                {
+                    "id": "AirplaneMode"
                 }
             ],
             "right": [
@@ -469,7 +472,7 @@
         "bluetoothHideUnnamedDevices": true,
         "bluetoothRssiPollIntervalMs": 60000,
         "bluetoothRssiPollingEnabled": true,
-        "disableDiscoverability": false,
+        "disableDiscoverability": true,
         "networkPanelView": "wifi",
         "wifiDetailsViewMode": "list"
     },
@@ -496,7 +499,7 @@
         "enableMarkdown": true,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "top_right",
+        "location": "top",
         "lowUrgencyDuration": 3,
         "monitors": [
             "eDP-1"
