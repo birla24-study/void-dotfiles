@@ -16,3 +16,7 @@
 [templates.obsidian]
 input_path = "~/.config/noctalia/templates/obsidian.css"
 output_path = "/home/lbx/Documents/Obsidian Vault/.obsidian/snippets/noctalia-colors.css"
+
+[templates.ptyxis]
+input_path = "~/.config/noctalia/templates/ptyxis.palette"
+output_path = "/home/lbx/.local/share/org.gnome.Ptyxis/palettes/noctalia.palette"
