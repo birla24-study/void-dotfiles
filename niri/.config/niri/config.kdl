@@ -330,24 +330,30 @@ blur {
 
     // Offset is the pixel spread. Increase this first before adding passes 
     // to save GPU cycles. If you see blocky artifacts, back it down slightly.
-    offset 2.7
+    offset 3
 
     // Adds subtle grain to eliminate color banding on dark/vibrant wallpapers
     noise 0.02
 
     // Boosts the colors slightly behind the blur for a rich "liquid glass" feel
-    saturation 1.8
+    saturation 1.6
 }
 
 window-rule {
-    geometry-corner-radius 10
-    clip-to-geometry true
+    geometry-corner-radius 0
+    clip-to-geometry false
     opacity 0.85// Add this line (0.0 to 1.0)
     open-maximized true
     background-effect {
         blur true
         xray true
     }
+}
+
+window-rule {
+    match is-floating=true
+    geometry-corner-radius 12
+    clip-to-geometry true
 }
 
 layer-rule {
