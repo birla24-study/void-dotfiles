@@ -336,7 +336,7 @@ blur {
     noise 0.02
 
     // Boosts the colors slightly behind the blur for a rich "liquid glass" feel
-    saturation 1.6
+    saturation 1.5
 }
 
 window-rule {

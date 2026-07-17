@@ -67,7 +67,7 @@
         "outerCorners": false,
         "position": "top",
         "reverseScroll": false,
-        "rightClickAction": "settings",
+        "rightClickAction": "launcherPanel",
         "rightClickCommand": "",
         "rightClickFollowMouse": true,
         "screenOverrides": [
@@ -117,7 +117,7 @@
                     "showGpuTemp": false,
                     "showLoadAverage": false,
                     "showMemoryAsPercent": true,
-                    "showMemoryUsage": true,
+                    "showMemoryUsage": false,
                     "showNetworkStats": true,
                     "showSwapUsage": false,
                     "textColor": "none",
@@ -173,21 +173,21 @@
                     "textColor": "none"
                 },
                 {
-                    "hideWhenZero": false,
-                    "hideWhenZeroUnread": false,
+                    "hideWhenZero": true,
+                    "hideWhenZeroUnread": true,
                     "iconColor": "none",
                     "id": "NotificationHistory",
-                    "showUnreadBadge": true,
+                    "showUnreadBadge": false,
                     "unreadBadgeColor": "primary"
                 },
                 {
                     "deviceNativePath": "BAT1",
-                    "displayMode": "icon-only",
+                    "displayMode": "icon-hover",
                     "hideIfIdle": false,
                     "hideIfNotDetected": true,
                     "id": "Battery",
                     "showNoctaliaPerformance": false,
-                    "showPowerProfiles": true
+                    "showPowerProfiles": false
                 },
                 {
                     "clockColor": "none",
@@ -454,8 +454,8 @@
         "analogClockInCalendar": true,
         "autoLocate": false,
         "firstDayOfWeek": -1,
-        "hideWeatherCityName": false,
-        "hideWeatherTimezone": true,
+        "hideWeatherCityName": true,
+        "hideWeatherTimezone": false,
         "name": "Nagpur",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
@@ -620,7 +620,7 @@
         "diskAvailWarningThreshold": 20,
         "diskCriticalThreshold": 90,
         "diskWarningThreshold": 80,
-        "enableDgpuMonitoring": false,
+        "enableDgpuMonitoring": true,
         "externalMonitor": "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor",
         "gpuCriticalThreshold": 90,
         "gpuWarningThreshold": 80,
@@ -776,7 +776,7 @@
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.3,
+        "panelBackgroundOpacity": 0.4,
         "panelsAttachedToBar": false,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "centered",
