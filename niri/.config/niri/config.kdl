@@ -362,6 +362,7 @@ layer-rule {
     exclude namespace="^noctalia-bar-exclusion"
     exclude namespace="^noctalia-notifications"
     exclude namespace="^noctalia-osd"
+    exclude namespace="^noctalia-toast"
     background-effect {
         blur true
         xray false
