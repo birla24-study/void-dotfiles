@@ -107,3 +107,6 @@ if [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ];
 fi
 
 
+
+# Created by `pipx` on 2026-07-19 02:06:18
+export PATH="$PATH:/home/lbx/.local/bin"

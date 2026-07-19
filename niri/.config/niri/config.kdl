@@ -320,7 +320,7 @@ animations {
     }
 
     // Slow down all animations by this factor to inspect/debug them (uncomment to use)
-    // slowdown 2.0
+    slowdown 1.2
 }
 
 blur {
@@ -376,7 +376,7 @@ layer-rule {
     place-within-backdrop true
     background-effect {
         blur true
-        xray false
+        xray true
     }
 }
 
