@@ -24,6 +24,12 @@ PS1='[%n@%m %1~]%# '
 # Trick Electron/Chromium apps into checking for libsecret backend
 export XDG_CURRENT_DESKTOP=GNOME
 
+
+# API keys
+export GOOGLE_API_KEY="no"
+export GOOGLE_DEFAULT_CLIENT_ID="no"
+export GOOGLE_DEFAULT_CLIENT_SECRET="no"
+
 # --- Aliases ---
 alias ls='ls --color=auto'
 alias ll='ls -la'
